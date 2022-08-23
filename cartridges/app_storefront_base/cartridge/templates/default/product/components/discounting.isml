@@ -1,0 +1,19 @@
+
+
+
+<div>
+    <isset name="price" value="${finalOrigPrice.list}" scope="page" />
+    <isset name="price_discounted" value="${finalOrigPrice.sales}" scope="page" />
+
+    <isif condition="${finalOrigPrice.sales !== null}">
+        <isif condition="${finalOrigPrice.list !== null}">
+            <span style="color:red;font-weight:bold;">
+                ${Resource.msgf('label.product.discounting', 'common', null, Math.round((price.decimalPrice - price_discounted.decimalPrice) / price.decimalPrice * 100))}
+            </span>
+
+        </isif>
+    </isif>
+
+
+
+</div>
