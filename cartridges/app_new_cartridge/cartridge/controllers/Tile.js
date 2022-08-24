@@ -9,7 +9,7 @@ server.extend(controller);
 server.append('Show', function(req,res,next){
 
     var discounting = 24;
-    res.render('product/gridTile', {discounting: discounting});
+    res.render('product/gridTile');
 
     return next();
 });

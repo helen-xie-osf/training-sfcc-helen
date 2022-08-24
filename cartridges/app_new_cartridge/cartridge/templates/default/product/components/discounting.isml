@@ -1,7 +1,0 @@
-
-    <div><span><h1>Best Deal 24% OFF</h1></span></div>
-
-    <div class="discounting">
-        <span>${Resource.msgf('label.product.discounting', 'common', null)}</span>
-
-    </div>

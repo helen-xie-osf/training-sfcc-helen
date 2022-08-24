@@ -1,0 +1,14 @@
+
+
+<!--div><h3> ${pdict.price}</h3></div-->
+
+<div class="row">
+<isloop items="${pdict.products}" var="product">
+    <div class="col-sm-3 col-sm-3">
+        <isobject object="${products}" view="tile">
+            <isinclude url="${URLUtils.url('Tile-Show', 'pid', product.id, 'swatches', true, 'ratings', true)}" />
+            <!--div><h3> ${product.price.sales.formatted}</h3></div-->
+        </isobject>
+    </div>
+</isloop>
+</div>
