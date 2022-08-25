@@ -191,6 +191,7 @@ server.get(
                 cartHelper.ensureAllShipmentsHaveMethods(currentBasket);
 
                 basketCalculationHelpers.calculateTotals(currentBasket);
+
             });
         }
 

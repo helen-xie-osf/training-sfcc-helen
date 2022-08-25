@@ -1,0 +1,5 @@
+<isset name="totalAmountThreshold" value="${pdict.totalAmountThreshold}" scope="page" />
+
+<div class="item-attributes error-unassigned-category d-flex flex-column" style="background-color: yellow;">
+    ${Resource.msgf('info.cart.totalAmmountExceeded', 'cart', null,totalAmountThreshold)}
+</div>
