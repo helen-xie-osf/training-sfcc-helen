@@ -1,0 +1,19 @@
+    <body>
+
+
+        <div class="row" style="fontsize: 6px;">
+            <p>The following product was added to your cart. </p>
+            <div><img src="${pdict.imageUrl}" class="d-block img-fluid" alt="${pdict.imageAlt}" /></div>
+            <ul>
+                <li>Product ID - ${pdict.productId}</li>
+                <li>Product Name - <a href="${pdict.productUrl}">${pdict.productName}</a></li>
+                <li><p>Product Description - ${pdict.productDescription}</p></li>
+                <li>Each - USD ${pdict.productPrice} </li>
+                <li>Quantity -  ${pdict.quantity}</li>
+            </ul>
+
+            <
+        </div>
+    </body>
+
+

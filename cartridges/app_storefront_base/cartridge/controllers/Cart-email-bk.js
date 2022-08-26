@@ -57,6 +57,21 @@ server.post('AddProduct', function (req, res, next) {
     var cartHelper = require('*/cartridge/scripts/cart/cartHelpers');
     var basketCalculationHelpers = require('*/cartridge/scripts/helpers/basketCalculationHelpers');
 
+
+    // for email feature
+    var ProductMgr = require('dw/catalog/ProductMgr');
+    var productHelper = require('*/cartridge/scripts/helpers/productHelpers');
+    var emailHelpers = require('*/cartridge/scripts/helpers/emailHelpers');
+    var Site = require('dw/system/Site');
+
+    var emailObj = {
+        to: 'ada.xie@yandex.com',
+        subject: Resource.msg('subject.addproduct.confirmation.email', 'cart', null),
+        from: Site.current.getCustomPreferenceValue('customerServiceEmail') || 'no-reply@testorganization.com',
+        type: emailHelpers.emailTypes.orderConfirmation
+    };
+
+
     var currentBasket = BasketMgr.getCurrentOrNewBasket();
     var previousBonusDiscountLineItems = currentBasket.getBonusDiscountLineItems();
     var productId = req.form.pid;
@@ -67,6 +82,8 @@ server.post('AddProduct', function (req, res, next) {
     var quantity;
     var result;
     var pidsObj;
+    // for email feature
+    var prodsObj = [];
 
     if (currentBasket) {
         Transaction.wrap(function () {
@@ -79,6 +96,27 @@ server.post('AddProduct', function (req, res, next) {
                     childProducts,
                     options
                 );
+                // email elements
+                var product = ProductMgr.getProduct(productId);
+                var optionModel = productHelper.getCurrentOptionModel(product.optionModel, options);
+
+                var prodObj = {
+                    productId: productId,
+                    product: product,
+                    productName: product.getName(),
+                    productUrl: product.getPageURL(),
+                    imageUrl: product.getImage('large', 0).getHttpImageURL({scaleWidth: 300, format: 'jpg'}),
+                    imageAlt: product.getImage('large', 0).getAlt(),
+                    productPrice: product.getPriceModel().getPrice().decimalValue,
+                    quantity: quantity,
+                    productDescription: product.getShortDescription(),
+                    childProducts: childProducts,
+                    optionModel: optionModel
+                };
+                emailHelpers.sendEmail(emailObj, 'cart/addToCartEmail', prodObj);
+                prodsObj.push(prodObj);
+
+
             } else {
                 // product set
                 pidsObj = JSON.parse(req.form.pidsObj);
@@ -97,6 +135,19 @@ server.post('AddProduct', function (req, res, next) {
                         childProducts,
                         pidOptions
                     );
+                    // email elements
+                    var product = ProductMgr.getProduct(PIDObj.pid);
+                    var optionModel = productHelper.getCurrentOptionModel(product.optionModel, pidOptions);
+                    var prodObj = {
+                        productId: PIDObj.pid,
+                        product: product,
+                        quantity: quantity,
+                        childProducts: childProducts,
+                        optionModel: optionModel
+                    };
+                    emailHelpers.sendEmail(emailObj, 'cart/addToCartEmail', prodObj);
+                    prodsObj.push(prodObj);
+
                     if (PIDObjResult.error) {
                         result.error = PIDObjResult.error;
                         result.message = PIDObjResult.message;
