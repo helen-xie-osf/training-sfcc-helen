@@ -13,6 +13,7 @@
     "lint:js-client": "gulp lint:js-client",
     "lint:scss": "gulp lint:scss",
     "lint": "gulp lint",
+    "uploadCartridge": "sgmf-scripts --uploadCartridge app_new_cartridge && sgmf-scripts --uploadCartridge app_storefront_base && sgmf-scripts --uploadCartridge modules && sgmf-scripts --uploadCartridge app_storefront_custom && sgmf-scripts --uploadCartridge bm_app_storefront_base",
     "fix:js-server": "eslint --config .eslintrc_server.js --fix",
     "fix:js-client": "eslint --config .eslintrc_client.js --fix",
     "prettier": "prettier"
