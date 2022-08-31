@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sort xmlns="http://www.demandware.com/xml/impex/sort/2009-05-15">
+    <sorting-rule rule-id="New Sorting Rule - 8/24/22 8:18:31 am">
+        <sorting-attributes>
+            <price>
+                <direction>ascending</direction>
+            </price>
+        </sorting-attributes>
+    </sorting-rule>
+
+</sort>

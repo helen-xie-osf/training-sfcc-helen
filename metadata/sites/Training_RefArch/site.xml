@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site xmlns="http://www.demandware.com/xml/impex/site/2007-04-30" site-id="Training_RefArch">
+    <name>Training RefArch</name>
+    <currency>USD</currency>
+    <taxation>net</taxation>
+    <custom-cartridges>app_new_cartridge:app_storefront_custom:bm_app_storefront_base:app_storefront_base</custom-cartridges>
+    <storefront-status>online</storefront-status>
+</site>
+

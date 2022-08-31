@@ -1,0 +1,11 @@
+<body>
+
+    <h1>${Resource.msg('email.msg.newsletter.dear', 'newsletter', null)}&nbsp;${pdict.firstName}&nbsp;${pdict.lastName},</h1>
+
+    <p>${Resource.msg('email.msg.newsletter.body1','newsletter',null)}</p>
+
+
+
+    <p>${Resource.msg('email.msg.newsletter.body2','newsletter',null)}</p>
+
+</body>

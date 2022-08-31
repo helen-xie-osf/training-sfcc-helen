@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<slot-configurations xmlns="http://www.demandware.com/xml/impex/slot/2008-09-08">
+    <slot-configuration slot-id="home-products-m" context="global" configuration-id="New Slot Configuration - 2022-08-16 23:04:36" assigned-to-site="false">
+        <template>slots/category/catLandingBanner.isml</template>
+        <enabled-flag>true</enabled-flag>
+        <content>
+            <categories>
+                <category category-id="newarrivals-womens"/>
+                <category category-id="top-seller"/>
+                <category category-id="mens-clothing-suits"/>
+                <category category-id="womens-outfits"/>
+                <category category-id="womens-clothing-dresses"/>
+                <category category-id="womens-jewelry-earrings"/>
+                <category category-id="womens-jewelry-bracelets"/>
+                <category category-id="mens-clothing-dress-shirts"/>
+            </categories>
+        </content>
+    </slot-configuration>
+
+    <slot-configuration slot-id="home-categories-m" context="global" configuration-id="New Slot Configuration - 2022-08-16 23:07:17" default="true" assigned-to-site="false">
+        <template>slots/category/catLandingBanner.isml</template>
+        <enabled-flag>true</enabled-flag>
+        <content>
+            <categories>
+                <category category-id="womens-jewelry-bracelets"/>
+                <category category-id="womens-jewelry-necklaces"/>
+            </categories>
+        </content>
+    </slot-configuration>
+
+    <slot-configuration slot-id="home-products-m" context="global" configuration-id="New Slot Configuration - 2022-08-16 23:12:26" default="true" assigned-to-site="false">
+        <template>slots/product/product_1x2.isml</template>
+        <enabled-flag>true</enabled-flag>
+        <content>
+            <products>
+                <product product-id="008884304078M"/>
+                <product product-id="008885004878M"/>
+                <product product-id="008885005196M"/>
+                <product product-id="008885538403M"/>
+                <product product-id="013742000320M"/>
+            </products>
+        </content>
+    </slot-configuration>
+
+    <slot-configuration slot-id="product-recommendations-m" context="global" configuration-id="New Slot Configuration - 2022-08-16 23:19:51" assigned-to-site="false">
+        <template>slots/product/product_1x2.isml</template>
+        <enabled-flag>true</enabled-flag>
+        <content>
+            <products>
+                <product product-id="008884304054M"/>
+                <product product-id="008885004854M"/>
+                <product product-id="008885004847M"/>
+                <product product-id="008885004564M"/>
+                <product product-id="008885004533M"/>
+            </products>
+        </content>
+    </slot-configuration>
+
+    <slot-configuration slot-id="search-result-banner-m" context="global" configuration-id="New Slot Configuration - 2022-08-17 22:42:16" default="true" assigned-to-site="false">
+        <template>slots/category/categoryTile.isml</template>
+        <enabled-flag>true</enabled-flag>
+        <content>
+            <categories>
+                <category category-id="womens-jewelry-earrings"/>
+                <category category-id="womens-accessories-scarves"/>
+            </categories>
+        </content>
+    </slot-configuration>
+
+</slot-configurations>

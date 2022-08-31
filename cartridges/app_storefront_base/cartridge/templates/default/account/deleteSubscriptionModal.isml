@@ -1,0 +1,20 @@
+<div class="modal fade" id="deleteNewsletterModal" tabindex="-1" role="dialog" aria-labelledby="deleteNewsletterModalTitle">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header delete-confirmation-header">
+                <h2 class="modal-title" id="deleteNewsletterModalTitle" aria-label="${Resource.msg('aria.delete.newsletter.dialog.title','newsletter',null)}">${Resource.msg('heading.delete.newsletter.confirmation.modal','newsletter',null)}</h2>
+                <button type="button" class="close" data-dismiss="modal" aria-label="${Resource.msg('label.close.dialog.button','common',null)}"><span aria-hidden="true">&times;</span></button>
+            </div>
+            <div class="modal-body delete-confirmation-body">
+                ${Resource.msg('msg.delete.newsletter.confirmation.modal','newsletter',null)}
+                <p class="product-to-remove"></p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-outline-primary" data-dismiss="modal">${Resource.msg('button.cancel','newsletter',null)}</button>
+                <button type="button" class="btn btn-primary delete-confirmation-btn"
+                        data-dismiss="modal"
+                >${Resource.msg('button.confirm','newsletter',null)}</button>
+            </div>
+        </div>
+    </div>
+</div>

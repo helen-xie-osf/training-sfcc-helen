@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<customer-list xmlns="http://www.demandware.com/xml/impex/customer/2006-10-31" list-id="Training_RefArch">
+    <header>
+        <customerno-sequence-enabled>false</customerno-sequence-enabled>
+        <customer-lockout-enabled>true</customer-lockout-enabled>
+        <max-failed-logins>10</max-failed-logins>
+        <lockout-effective-period>30</lockout-effective-period>
+        <customer-login-attempt-reset-time>30</customer-login-attempt-reset-time>
+        <min-password-length>8</min-password-length>
+        <min-password-special-chars>1</min-password-special-chars>
+        <force-password-contains-alpha>true</force-password-contains-alpha>
+        <force-password-contains-numeric>true</force-password-contains-numeric>
+        <force-password-mixed-case>true</force-password-mixed-case>
+        <max-password-age>365000</max-password-age>
+        <max-password-reset-token-age>30</max-password-reset-token-age>
+    </header>
+
+    <customer customer-no="00001502">
+        <credentials>
+            <login>ada.xie@yandex.com</login>
+            <password encrypted="true" encryptionScheme="scrypt">$s0$b0401$v4SpB+oJ3ZITf+g9RUELLQ==$J6IR75toNVKXFu4diFF2mt5VPaXiXAObPFhcz0q+hkA=</password>
+            <enabled-flag>true</enabled-flag>
+            <password-question/>
+            <password-answer/>
+        </credentials>
+        <profile>
+            <salutation/>
+            <title/>
+            <first-name>ada3</first-name>
+            <second-name/>
+            <last-name>xie</last-name>
+            <suffix/>
+            <company-name/>
+            <job-title/>
+            <email>ada.xie@yandex.com</email>
+            <phone-home>9234567890</phone-home>
+            <phone-business/>
+            <phone-mobile/>
+            <fax/>
+            <creation-date>2022-08-25T07:29:49.000Z</creation-date>
+            <last-login-time>2022-08-26T08:56:07.000Z</last-login-time>
+            <last-visit-time>2022-08-26T10:17:52.000Z</last-visit-time>
+            <preferred-locale/>
+        </profile>
+        <note/>
+    </customer>
+
+</customer-list>

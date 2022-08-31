@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<users xmlns="http://www.demandware.com/xml/impex/user/2007-09-05">
+    <user login="helen.xie@osf.digital" enabled-flag="true">
+        <credentials>
+            <external-id>5310444e-aa4b-4df3-b017-ca4bee4346af</external-id>
+        </credentials>
+        <profile>
+            <first-name>Helen</first-name>
+            <last-name>Xie</last-name>
+            <email>helen.xie@osf.digital</email>
+        </profile>
+    </user>
+
+</users>

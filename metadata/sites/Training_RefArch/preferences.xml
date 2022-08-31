@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<preferences xmlns="http://www.demandware.com/xml/impex/preferences/2007-03-31">
+    <standard-preferences>
+        <all-instances>
+            <preference preference-id="AccountNumberRetentionDays">30</preference>
+            <preference preference-id="AddProductToBasketBehavior">IncrementQuantities</preference>
+            <preference preference-id="CouponGeneratorIncludeDashes">true</preference>
+            <preference preference-id="CouponGeneratorIncludeVowels">true</preference>
+            <preference preference-id="EnableSiteOrderNumbers">false</preference>
+            <preference preference-id="IntegrationOrderCenterIncludeSite">true</preference>
+            <preference preference-id="SiteCatalog">storefront-catalog-m-en</preference>
+            <preference preference-id="SiteCurrencies">USD</preference>
+            <preference preference-id="SiteCustomerList">Training_RefArch</preference>
+            <preference preference-id="SiteDefaultLocale">default</preference>
+            <preference preference-id="SiteInventoryList">inventory_m</preference>
+            <preference preference-id="SiteLibrary">Training_RefArch</preference>
+            <preference preference-id="SiteLocales">default</preference>
+            <preference preference-id="SitePriceBooks">cny-m-list-prices:cny-m-sale-prices:eur-m-list-prices:eur-m-sale-prices:usd-m-list-prices:usd-m-sale-prices</preference>
+            <preference preference-id="SiteTimezone">Etc/UTC</preference>
+            <preference preference-id="StorefrontOrderAccess">customer_or_session_match</preference>
+            <preference preference-id="StorefrontOrderFiltering">true</preference>
+            <preference preference-id="StorefrontURLsEnabled">true</preference>
+        </all-instances>
+        <development>
+            <preference preference-id="ExternallyPublishProductIndex">false</preference>
+            <preference preference-id="MergedVariationGroupsDisplayMode">false</preference>
+            <preference preference-id="RobotsTxtContent"/>
+            <preference preference-id="RobotsTxtMode">Cartridge</preference>
+        </development>
+        <staging>
+            <preference preference-id="ExternallyPublishProductIndex">false</preference>
+            <preference preference-id="MergedVariationGroupsDisplayMode">false</preference>
+            <preference preference-id="RobotsTxtContent"/>
+            <preference preference-id="RobotsTxtMode">Cartridge</preference>
+        </staging>
+        <production>
+            <preference preference-id="ExternallyPublishProductIndex">false</preference>
+            <preference preference-id="MergedVariationGroupsDisplayMode">false</preference>
+            <preference preference-id="RobotsTxtContent"/>
+            <preference preference-id="RobotsTxtMode">Cartridge</preference>
+        </production>
+    </standard-preferences>
+    <custom-preferences>
+        <all-instances/>
+        <development>
+            <preference preference-id="sfraEnableOverlayApplePay">false</preference>
+            <preference preference-id="sfraEnableOverlayCommercePayments">false</preference>
+            <preference preference-id="sfraEnableOverlayDataDownload">false</preference>
+            <preference preference-id="sfraEnableOverlayGiftRegistry">false</preference>
+            <preference preference-id="sfraEnableOverlayInStorePickup">false</preference>
+            <preference preference-id="sfraEnableOverlayProductCompare">false</preference>
+            <preference preference-id="sfraEnableOverlayWishlist">false</preference>
+        </development>
+        <staging/>
+        <production/>
+    </custom-preferences>
+</preferences>
+

@@ -1,0 +1,45 @@
+<isdecorate template="common/layout/page">
+    <isscript>
+        var assets = require('*/cartridge/scripts/assets.js');
+        assets.addJs('/js/addressBook.js');
+        assets.addCss('/css/account/addressBook.css');
+    </isscript>
+    <div class="hero slant-down account-image">
+        <h1 class="page-title">${Resource.msg('label.newsletter','newsletter',null)}</h1>
+    </div>
+
+    <div class="container">
+        <!---Breadcrumbs--->
+        <isinclude template="components/breadcrumbs/pageBreadcrumbs"/>
+
+        <!-- show newsletter info -->
+        <isset name="newsletter" value="${pdict.newsletter.newsletter}" scope="page" />
+        <div class="row justify-content-center">
+            <div class="col-sm-8 col-md-6">
+                <div class="card">
+                    <div class="card-header">
+                        <h2 class="address-heading pull-left">${Resource.msg('label.newsletter.title','newsletter',null)}</h2>
+                        <!--a href="${URLUtils.url('Newsletter-Edit', 'newsletterId', newsletter.UUID)}" class="pull-right">${Resource.msg('link.edit','newsletter',null)}</a-->
+                    </div>
+                    <div class="card-body card-body-positioning">
+                        <div>Email:        ${newsletter.email}</div>
+                        <div>FirstName:    ${newsletter.firstName}</div>
+                        <div>LastName:     ${newsletter.lastName}</div>
+
+
+                        <!--button
+                            type="button"
+                            class="remove-btn remove-address btn-light"
+                            data-toggle="modal"
+                            data-target="#deleteSubscriptionModal"
+                            data-url="${pdict.actionUrls.deleteActionUrl}">
+                            &times;
+                        </button-->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</isdecorate>

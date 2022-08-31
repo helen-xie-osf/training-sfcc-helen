@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<custom-objects xmlns="http://www.demandware.com/xml/impex/customobject/2006-10-31">
+    <custom-object type-id="customer_subscription_obj" object-id="CH_guest"/>
+
+    <custom-object type-id="customer_subscription_obj" object-id="CH_member"/>
+
+    <custom-object type-id="customer_subscription_obj" object-id="NewsletterSubscription_general"/>
+
+</custom-objects>

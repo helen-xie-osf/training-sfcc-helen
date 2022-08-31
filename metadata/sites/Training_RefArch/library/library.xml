@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<library xmlns="http://www.demandware.com/xml/impex/library/2006-10-31">
+    <folder folder-id="root">
+        <online-flag>true</online-flag>
+        <page-attributes/>
+    </folder>
+
+    <folder folder-id="student_guide_folder">
+        <display-name xml:lang="x-default">Student Guide Folder</display-name>
+        <online-flag>true</online-flag>
+        <parent>root</parent>
+        <page-attributes/>
+    </folder>
+
+    <content content-id="student_guide_content_asset">
+        <display-name xml:lang="x-default">Student Guide Content Asset</display-name>
+        <online-flag>true</online-flag>
+        <searchable-flag>false</searchable-flag>
+        <page-attributes/>
+        <custom-attributes>
+            <custom-attribute attribute-id="body" xml:lang="x-default">&lt;p&gt;&lt;img alt="" src="fashion-2.jpg?$staticlink$" title="" /&gt;&lt;/p&gt;&#13;
+&#13;
+&lt;ol id="yui_3_17_2_1_1660731578609_47"&gt;&#13;
+	&lt;li id="yui_3_17_2_1_1660731578609_56"&gt;&#13;
+	&lt;p id="yui_3_17_2_1_1660731578609_55"&gt;This is my 1st content asset's body.&lt;/p&gt;&#13;
+	&lt;/li&gt;&#13;
+&lt;/ol&gt;</custom-attribute>
+        </custom-attributes>
+        <folder-links>
+            <classification-link folder-id="student_guide_folder"/>
+        </folder-links>
+    </content>
+
+</library>
