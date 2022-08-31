@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # SFRA Training Base Repo
 =================
 
@@ -85,3 +86,6 @@ Submitting a pull request
 2. Our cartridges structure is easier to organize and makes more sense for SG developers
 3. Github structure forces that each dev clones code in exactly the same way, same structure, same folders or it might break webpack
 4. Github structure is prone to dependency inconsistencies since each cartridge has its own repo and package.json
+=======
+# training-sfcc-helen-xie
+>>>>>>> 544a23f92a199a549f11661da4d02495def7229f
